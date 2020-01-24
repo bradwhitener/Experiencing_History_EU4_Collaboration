@@ -3,7 +3,9 @@
 #  Scripted by students at              #
 #  St. Mary's University - Spring 2020  # 
 #########################################
+
 namespace = stmu_europe
+
 #########################################
 #  stmu europe 1 | December 1, 1455     #
 #########################################
@@ -31,7 +33,7 @@ country_event = {
 	}
 	option = {
 		name = "stmu_europe.1.a"
-
+	}
 }
 
 #########################################

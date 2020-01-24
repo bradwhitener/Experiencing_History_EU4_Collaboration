@@ -13,8 +13,8 @@ country_event = {
 	desc = "stmu_europe.1.d"
 	picture = ADVISOR_eventPicture
 	trigger = {
-		is_year = 1445
-		is_month = 0
+		is_year = 1455
+		is_month = 11
 		religion = catholic
 		capital_scope = {
 			continent = europe
@@ -31,10 +31,7 @@ country_event = {
 	}
 	option = {
 		name = "stmu_europe.1.a"
-	}
-	option = {
-		name = "stmu_europe.1.b"
-	}
+
 }
 
 #########################################

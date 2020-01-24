@@ -3,9 +3,7 @@
 #  Scripted by students at              #
 #  St. Mary's University - Spring 2020  # 
 #########################################
-
 namespace = stmu_europe
-
 #########################################
 #  stmu europe 1 | January 1, 1445       #
 #########################################
@@ -48,16 +46,16 @@ country_event = {
 #										#
 #  October 19, 1469						#
 #########################################
-
 country_event = {
 	id = stmu_europe.2
 	title = "flavor_spa.EVTNAME3716"
 	desc = "flavor_spa.EVTDESC3716"
 	picture = DIPLOMACY_eventPicture
-
 	trigger = {
 		is_year = 1469
-		NOT = { is_year = 1470 }
+		NOT = {
+			is_year = 1470
+		}
 		is_month = 9
 		tag = CAS
 		religion = catholic
@@ -65,22 +63,25 @@ country_event = {
 			has_country_flag = had_event_stmu_europe.2
 		}
 	}
-
 	mean_time_to_happen = {
 		days = 18
 	}
-
 	immediate = {
 		set_country_flag = had_event_stmu_europe.2
-		country_event = { id = flavor_spa.3716
+		country_event = {
+			id = flavor_spa.3716
 		}
 	}
-
-option = {		# Let us bind their Dynasty to ours
+	option = {
+		# Let us bind their Dynasty to ours
 		name = "flavor_spa.EVTOPTA3716"
-		ai_chance = { factor = 99 }
+		ai_chance = {
+			factor = 99
+		}
 		if = {
-			limit = { tag = CAS }
+			limit = {
+				tag = CAS
+			}
 			create_union = ARA
 			add_opinion = {
 				who = ARA
@@ -104,7 +105,9 @@ option = {		# Let us bind their Dynasty to ours
 			}
 		}
 		if = {
-			limit = { tag = ARA }
+			limit = {
+				tag = ARA
+			}
 			create_union = CAS
 			add_opinion = {
 				who = CAS
@@ -138,4 +141,3 @@ option = {		# Let us bind their Dynasty to ours
 		}
 	}
 }
-

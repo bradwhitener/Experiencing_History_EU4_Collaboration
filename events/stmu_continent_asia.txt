@@ -1,0 +1,45 @@
+#########################################
+#  StMU History Asia Continent Events   #
+#  Scripted by students at              #
+#  St. Mary's University - Spring 2020  # 
+#########################################
+
+namespace = stmu_asia
+
+#########################################
+#  stmu asia 1 | February 1, 1446       #
+#########################################
+
+country_event = {
+	id = stmu_asia.1
+	title = "stmu_asia.1.n"
+	desc = "stmu_asia.1.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		is_year = 1446
+		is_month = 1
+		capital_scope = { 
+			continent = asia
+		
+		}
+		NOT = { has_country_flag = had_event_stmu_asia.1 }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	immediate = {
+			set_country_flag = had_event_stmu_asia.1
+		}
+
+	option = {
+		name = "stmu_asia.1.a"
+	}
+
+	option = {
+		name = "stmu_asia.1.b"
+	}
+}
+

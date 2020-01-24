@@ -1,0 +1,34 @@
+bookmark =
+{
+	name = "INDUSTRIAL_AGE"
+	desc = "INDUSTRIAL_AGE_DESC"
+	date = 1823.1.1
+
+## Europe	
+	country = FRA
+	country = GBR
+	country = PRU
+	country = HAB
+
+## America
+
+	country = USA
+	country = MEX
+	country = PEU
+	country = BRZ
+
+## Western Asia
+
+	country = TUR
+	country = PER
+
+## Eastern Asia
+
+	country = QNG
+	country = TKG
+
+	## Africa
+
+	country = ETH
+
+}

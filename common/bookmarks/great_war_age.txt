@@ -1,0 +1,35 @@
+bookmark =
+{
+	name = "GREAT_WAR_AGE"
+	desc = "GREAT_WAR_AGE_DESC"
+	date = 1900.1.1
+
+## Europe	
+	country = FR2
+	country = GBR
+	country = GER
+	country = HAB
+	country = RUS
+
+## America
+
+	country = USA
+	country = MEX
+	country = CAN
+	country = BRZ
+	country = PEU
+
+
+## Western Asia
+
+	country = TUR
+	country = PER
+
+## Eastern Asia
+
+	country = QNG
+	country = JAP
+	country = KOR
+
+
+}

@@ -1,0 +1,43 @@
+#########################################
+#  StMU History Oceania Events           #
+#  Scripted by students at              #
+#  St. Mary's University - Spring 2020  # 
+#########################################
+
+namespace = stmu_oceania
+
+# Oceania event in 1445
+
+country_event = {
+	id = stmu_oceania.1
+	title = "stmu_oceania.1.n"
+	desc = "stmu_oceania.1.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		is_year = 1445
+		is_month = 1
+		religion = sunni
+		capital_scope = { 
+			continent = oceania
+		}
+		NOT = { has_country_flag = had_event_stmu_oceania.1 }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	immediate = {
+			set_country_flag = had_event_stmu_oceania.1
+		}
+
+	option = {
+		name = "stmu_oceania.1.a"
+	}
+
+	option = {
+		name = "stmu_oceania.1.b"
+	}
+}
+

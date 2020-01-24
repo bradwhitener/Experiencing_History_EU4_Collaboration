@@ -1,0 +1,44 @@
+#########################################
+#  StMU History North America Events    #
+#  Scripted by students at              #
+#  St. Mary's University - Spring 2020  # 
+#########################################
+
+namespace = stmu_north_america
+
+#############################################
+#  stmu north america 1 | February 1, 1446  #
+#############################################
+
+country_event = {
+	id = stmu_north_america.1
+	title = "stmu_north_america.1.n"
+	desc = "stmu_north_america.1.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		is_year = 1447
+		is_month = 1
+		capital_scope = { 
+			continent = north_america
+		}
+		NOT = { has_country_flag = had_event_stmu_north_america.1 }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	immediate = {
+			set_country_flag = had_event_stmu_north_america.1
+		}
+
+	option = {
+		name = "stmu_north_america.1.a"
+	}
+
+	option = {
+		name = "stmu_north_america.1.b"
+	}
+}
+

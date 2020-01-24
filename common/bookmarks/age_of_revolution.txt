@@ -1,0 +1,27 @@
+bookmark =
+{
+	name = "AGE_OF_REVOLUTION"
+	desc = "AGE_OF_REVOLUTION_DESC"
+	date = 1750.1.1
+
+## Europe	
+	country = FRA
+	country = GBR
+	country = PRU
+	country = HAB
+
+## America
+
+
+
+## Western Asia
+
+	country = TUR
+	country = PER
+
+## Eastern Asia
+
+	country = QNG
+	country = TKG
+
+}

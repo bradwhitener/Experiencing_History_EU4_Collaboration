@@ -1,0 +1,30 @@
+bookmark =
+{
+	name = "AGE_OF_DISCOVERY"
+	desc = "AGE_OF_DISCOVERY_DESC"
+	date = 1444.11.1
+
+## Europe	
+	country = POR
+	country = CAS
+	country = FRA
+	country = ENG
+
+## Western Asia
+
+	country = TUR
+	country = TIM
+	country = MUG
+
+## Eastern Asia
+
+	country = MNG
+	country = OIR
+
+## Africa
+
+	country = TMB
+	country = MAL
+	country = ZAN
+
+}

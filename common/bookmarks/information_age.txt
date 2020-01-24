@@ -1,0 +1,42 @@
+bookmark =
+{
+	name = "INFORMATION_AGE"
+	desc = "INFORMATION_AGE_DESC"
+	date = 1945.5.10
+
+## Europe	
+	country = FR2
+	country = GBR
+	country = EGE
+	country = WGE
+	country = SOV
+
+## America
+
+	country = USA
+	country = MEX
+	country = CAN
+	country = BRZ
+	country = PEU
+	country = CUB
+
+## Western Asia
+
+	country = IRQ
+	country = IRA
+	country = ISR
+
+## Eastern Asia
+
+	country = CHN
+	country = JAP
+	country = KOR
+	country = VTN
+
+## Africa
+
+	country = EGP
+	country = SOM
+	country = RSA
+
+}

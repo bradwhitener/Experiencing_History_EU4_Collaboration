@@ -1,0 +1,141 @@
+#########################################
+#  StMU History Europe Events           #
+#  Scripted by students at              #
+#  St. Mary's University - Spring 2020  # 
+#########################################
+
+namespace = stmu_europe
+
+#########################################
+#  stmu europe 1 | January 1, 1445       #
+#########################################
+country_event = {
+	id = stmu_europe.1
+	title = "stmu_europe.1.n"
+	desc = "stmu_europe.1.d"
+	picture = ADVISOR_eventPicture
+	trigger = {
+		is_year = 1445
+		is_month = 0
+		religion = catholic
+		capital_scope = {
+			continent = europe
+		}
+		NOT = {
+			has_country_flag = had_event_stmu_europe.1
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		set_country_flag = had_event_stmu_europe.1
+	}
+	option = {
+		name = "stmu_europe.1.a"
+	}
+	option = {
+		name = "stmu_europe.1.b"
+	}
+}
+
+#########################################
+#  stmu europe 2 | October 19, 1469     #
+#										#
+#  The Iberian Wedding Event            #
+#										#
+#  Marriage of Isabella and Ferdinand II#
+#										#
+#  October 19, 1469						#
+#########################################
+
+country_event = {
+	id = stmu_europe.2
+	title = "flavor_spa.EVTNAME3716"
+	desc = "flavor_spa.EVTDESC3716"
+	picture = DIPLOMACY_eventPicture
+
+	trigger = {
+		is_year = 1469
+		NOT = { is_year = 1470 }
+		is_month = 9
+		tag = CAS
+		religion = catholic
+		NOT = {
+			has_country_flag = had_event_stmu_europe.2
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 18
+	}
+
+	immediate = {
+		set_country_flag = had_event_stmu_europe.2
+		country_event = { id = flavor_spa.3716
+		}
+	}
+
+option = {		# Let us bind their Dynasty to ours
+		name = "flavor_spa.EVTOPTA3716"
+		ai_chance = { factor = 99 }
+		if = {
+			limit = { tag = CAS }
+			create_union = ARA
+			add_opinion = {
+				who = ARA
+				modifier = spa_iberian_wedding
+			}
+			ARA = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding
+				}
+				add_liberty_desire = -50
+			}
+			every_known_country = {
+				limit = {
+					marriage_with = ARA
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding_negative
+				}
+			}
+		}
+		if = {
+			limit = { tag = ARA }
+			create_union = CAS
+			add_opinion = {
+				who = CAS
+				modifier = spa_iberian_wedding
+			}
+			CAS = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding
+				}
+				add_liberty_desire = -50
+			}
+			every_known_country = {
+				limit = {
+					marriage_with = CAS
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding_negative
+				}
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+}
+

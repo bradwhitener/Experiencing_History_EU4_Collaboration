@@ -1,0 +1,45 @@
+#########################################
+#  StMU History Africa Events           #
+#  Scripted by students at              #
+#  St. Mary's University - Spring 2020  # 
+#########################################
+
+namespace = stmu_africa
+
+#########################################
+#  stmu africa 1 | February 1, 1445     #
+#########################################
+
+country_event = {
+	id = stmu_africa.1
+	title = "stmu_africa.1.n"
+	desc = "stmu_africa.1.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		is_year = 1445
+		is_month = 1
+		religion = sunni
+		capital_scope = { 
+			continent = africa
+		}
+		NOT = { has_country_flag = had_event_stmu_africa.1 }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	immediate = {
+			set_country_flag = had_event_stmu_africa.1
+		}
+
+	option = {
+		name = "stmu_africa.1.a"
+	}
+
+	option = {
+		name = "stmu_africa.1.b"
+	}
+}
+

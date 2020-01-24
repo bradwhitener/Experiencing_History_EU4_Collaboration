@@ -1,0 +1,30 @@
+bookmark =
+{
+	name = "AGE_OF_ABSOLUTISM"
+	desc = "AGE_OF_ABSOLUTISM_DESC"
+	date = 1600.1.1
+
+## Absolutist Monarchies	
+	country = FRA
+	country = HAB
+	country = SPA
+	country = BRA
+
+## Republics & Constitutional Monarchies
+
+	country = ENG
+	country = NED
+
+## Western Asia
+
+	country = TUR
+	country = PER
+	country = MUG
+
+## Eastern Asia
+
+	country = MNG
+	country = TKG
+	country = MCH
+
+}

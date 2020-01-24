@@ -1,0 +1,38 @@
+bookmark =
+{
+	name = "AGE_OF_REFORMATION"
+	desc = "AGE_OF_REFORMATION_DESC"
+	date = 1500.1.1
+
+## Catholic Countries	
+	country = HAB
+	country = FRA
+	country = CAS
+	country = POR
+
+## Protestant Countries
+
+	country = BRA
+	country = BOH
+	country = ENG
+
+## Western Asia
+
+	country = TUR
+	country = PER
+
+## Eastern Asia
+
+	country = MNG
+	country = KOR
+	country = TKG
+
+## Africa
+
+	country = AJU
+	country = MBA
+	country = MAL
+	country = KON
+
+
+}

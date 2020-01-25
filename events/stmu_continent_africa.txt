@@ -10,7 +10,7 @@ namespace = stmu_africa
 #  stmu africa 1 | February 1, 1445     #
 #########################################
 
-##Hello World##
+##Hello World## Testing
 
 country_event = {
 	id = stmu_africa.1

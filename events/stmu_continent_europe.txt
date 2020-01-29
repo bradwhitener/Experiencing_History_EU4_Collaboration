@@ -36,15 +36,15 @@ country_event = {
 	}
 }
 
-#########################################
-#  stmu europe 2 | October 19, 1469     #
-#										#
-#  The Iberian Wedding Event            #
-#										#
-#  Marriage of Isabella and Ferdinand II#
-#										#
-#  October 19, 1469						#
-#########################################
+#####################################################
+#													#
+#  stmu europe 2 | October 19, 1469     			#
+#													#
+#  The Iberian Wedding Event            			#
+#													#
+#  Marriage of Isabella and Ferdinand II			#
+#													#
+#####################################################
 country_event = {
 	id = stmu_europe.2
 	title = "flavor_spa.EVTNAME3716"

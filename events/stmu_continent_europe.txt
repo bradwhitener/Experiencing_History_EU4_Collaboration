@@ -50,6 +50,7 @@ country_event = {
 	title = "flavor_spa.EVTNAME3716"
 	desc = "stmu_europe.2.d"
 	picture = DIPLOMACY_eventPicture
+
 	trigger = {
 		is_year = 1469
 		NOT = {
@@ -62,15 +63,18 @@ country_event = {
 			has_country_flag = had_event_stmu_europe.2
 		}
 	}
+
 	mean_time_to_happen = {
 		days = 18
 	}
+
 	immediate = {
 		set_country_flag = had_event_stmu_europe.2
 		country_event = {
 			id = flavor_spa.3716
 		}
 	}
+	
 	option = {
 		# Let us bind their Dynasty to ours
 		name = "flavor_spa.EVTOPTA3716"

@@ -6,9 +6,15 @@
 
 namespace = stmu_europe
 
-#########################################
-#  stmu europe 1 | December 1, 1455     #
-#########################################
+#####################################################
+#													#
+#  stmu europe 1 | December 1, 1455     			#
+#													#
+#  1455 - A Year in Review              			#
+#													#
+#  Template for simple date-triggered events		#
+#													#
+#####################################################
 country_event = {
 	id = stmu_europe.1
 	title = "stmu_europe.1.n"
@@ -17,6 +23,7 @@ country_event = {
 	trigger = {
 		is_year = 1455
 		is_month = 11
+		NOT = { is_year = 1456 }
 		religion = catholic
 		capital_scope = {
 			continent = europe
@@ -190,14 +197,7 @@ country_event = {
 
 
 
-
-
-
-
-
-
-
-#Andre's lines from 200-399
+#Andres' lines from 200-399
 
 
 

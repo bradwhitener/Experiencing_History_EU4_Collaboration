@@ -797,46 +797,46 @@ country_event = {
 
 
 
-# Brad's lines from 800-999
+#####################################################
+#													#
+#  stmu europe 6 | October 25, 1465	    			#
+#													#
+#  1455 - A Year in Review              			#
+#													#
+#  Template for simple date-triggered events		#
+#													#
+#####################################################
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+country_event = {
+	id = stmu_europe.6
+	title = "stmu_europe.6.n"
+	desc = "stmu_europe.6.d"
+	picture = FORT_eventPicture
+	trigger = {
+		is_year = 1465
+		is_month = 9
+		NOT = { is_year = 1466 }
+		religion = catholic
+		tag = FRA
+		NOT = {
+			has_country_flag = had_event_stmu_europe.6
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		set_country_flag = had_event_stmu_europe.6
+	}
+	option = {
+		name = "stmu_europe.6.a"
+		add_mil_power = 100
+	}
+	option = {
+		name = "stmu_europe.6.b"
+		add_treasury = 100
+	}
+}
 
 
 

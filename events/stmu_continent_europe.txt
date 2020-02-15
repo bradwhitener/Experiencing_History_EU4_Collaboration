@@ -15,6 +15,7 @@ namespace = stmu_europe
 #  Template for simple date-triggered events		#
 #													#
 #####################################################
+
 country_event = {
 	id = stmu_europe.1
 	title = "stmu_europe.1.n"
@@ -151,7 +152,6 @@ country_event = {
 		}
 	}
 }
-
 
 
 

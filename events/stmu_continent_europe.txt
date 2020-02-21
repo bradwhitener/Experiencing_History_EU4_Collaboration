@@ -998,7 +998,42 @@ country_event = {
 
 
 # Dylan's lines from 1000-1199
+#####################################################
+#													#
+#  stmu europe 7 | May 29, 1453     			    #
+#													#
+#  1453 - The Fall of Constantinople                #
+#													#
+#  Template for simple date-triggered events		#
+#													#
+#####################################################
 
+country_event = {
+	id = stmu_europe.7
+	title = "stmu_europe.7.n"
+	desc = "stmu_europe.7.d"
+	picture = WOUNDED_SOLDIERS_eventPicture
+	trigger = {
+		is_year = 1453
+		is_month = 4
+		NOT = { is_year = 1454 }
+		capital_scope = {
+			continent = europe
+		}
+		NOT = {
+			has_country_flag = had_event_stmu_europe.5
+		}
+	}
+	mean_time_to_happen = {
+		days = 29
+	}
+	immediate = {
+		set_country_flag = had_event_stmu_europe.5
+	}
+	option = {
+		name = "stmu_europe.7.a"
+	}
+}
 
 
 

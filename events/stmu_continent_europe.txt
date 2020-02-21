@@ -597,7 +597,41 @@ country_event = {
 
 
 
-# Kevin's lines from 600-799
+#####################################################
+#													#
+#  stmu europe 6 | December 1, 1455     			#
+#													#
+#  1455 - The Treaty of Picquigny                	#
+#													#
+#####################################################
+
+country_event = {
+	id = stmu_europe.5
+	title = "stmu_europe.5.n"
+	desc = "stmu_europe.5.d"
+	picture = ADVISOR_eventPicture
+	trigger = {
+		is_year = 1475
+		is_month = 07
+		NOT = { is_year = 1476 }
+		religion = catholic
+		capital_scope = {
+			continent = europe
+		}
+		NOT = {
+			has_country_flag = had_event_stmu_europe.5
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		set_country_flag = had_event_stmu_europe.5
+	}
+	option = {
+		name = "stmu_europe.5.a"
+	}
+}
 
 
 

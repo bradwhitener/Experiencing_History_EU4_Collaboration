@@ -594,9 +594,10 @@ country_event = {
 
 
 
+ 
 
 
-
+# Brad's lines from 600-799
 #####################################################
 #													#
 #  stmu europe 6 | December 1, 1455     			#
@@ -633,42 +634,41 @@ country_event = {
 	}
 }
 
+#####################################################
+#													#
+#  stmu europe 15 | March 1, 1562	    			#
+#													#
+#  1562 - The Massacre of Huguenots at Vassy       	#
+#													#
+#####################################################
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+country_event = {
+	id = stmu_europe.15
+	title = "stmu_europe.15.n"
+	desc = "stmu_europe.15.d"
+	picture = WARS_OF_RELIGION_1_eventPicture
+	trigger = {
+		is_year = 1562
+		is_month = 02
+		NOT = { is_year = 1563 }
+		religion = catholic
+		capital_scope = {
+			continent = europe
+		}
+		NOT = {
+			has_country_flag = had_event_stmu_europe.15
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		set_country_flag = had_event_stmu_europe.15
+	}
+	option = {
+		name = "stmu_europe.15.a"
+	}
+}
 
 
 

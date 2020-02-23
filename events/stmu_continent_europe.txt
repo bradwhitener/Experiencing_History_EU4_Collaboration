@@ -804,8 +804,6 @@ country_event = {
 #													#
 #  1455 - A Year in Review              			#
 #													#
-#  Template for simple date-triggered events		#
-#													#
 #####################################################
 
 country_event = {
@@ -857,9 +855,7 @@ country_event = {
 		is_month = 02
 		NOT = { is_year = 1563 }
 		religion = catholic
-		capital_scope = {
-			continent = europe
-		}
+		tag = FRA
 		NOT = {
 			has_country_flag = had_event_stmu_europe.15
 		}
@@ -872,19 +868,78 @@ country_event = {
 	}
 	option = {
 		name = "stmu_europe.15.a"
-		add_reform_desire = -0.5
-		spawn_rebels = {
-			type = heretic_rebels
-			size = 2
+		add_reform_desire = -0.2
+		PAP = {
+			add_opinion = { who = ROOT modifier = opinion_grateful }
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				fort_level = 1
 			}
-	}
+			spawn_rebels = {
+					type = heretic_rebels
+					size = 1
+					win = yes
+				}			
+		}	
+		every_neighbor_country = {
+			limit = {
+				religion = catholic
+			}
+			add_opinion = { who = ROOT modifier = opinion_grateful }
+		}
+		every_neighbor_country = {
+			limit = {
+				OR = {
+					religion = protestant
+					religion = reformed
+				}
+			}
+			add_opinion = { who = ROOT modifier = opinion_angry }
+		}	
 
-		option = {
+	}
+	option = {
 		name = "stmu_europe.15.b"
-		add_reform_desire = 0.5
+		add_reform_desire = 0.1
+		add_treasury = -100
 	}
 }
+#####################################################
+#													#
+#  stmu europe 13 | April 24, 1529	    			#
+#													#
+#  The Protestation at Speyer              			#
+#													#
+#####################################################
 
+country_event = {
+	id = stmu_europe.13
+	title = "stmu_europe.13.n"
+	desc = "stmu_europe.13.d"
+	picture = PROTESTATION_AT_SPEYER_eventPicture
+	trigger = {
+		is_year = 1529
+		is_month = 3
+		NOT = { is_year = 1530 }
+		capital_scope = {
+			continent = europe
+		}
+		NOT = {
+			has_country_flag = had_event_stmu_europe.13
+		}
+	}
+	mean_time_to_happen = {
+		days = 23
+	}
+	immediate = {
+		set_country_flag = had_event_stmu_europe.13
+	}
+	option = {
+		name = "stmu_europe.13.a"
+	}
+}
 
 
 

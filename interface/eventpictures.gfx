@@ -1,10 +1,16 @@
 spriteTypes = {
 	
+	# Event stmu_europe.13
+		spriteType = {
+			name = "PROTESTATION_AT_SPEYER_eventPicture"
+			texturefile = "gfx/event_pictures/PROTESTATION_AT_SPEYER_eventPicture.dds"
+			allwaystransparent = yes
+		}		
 	# Event stmu_europe.15
 		spriteType = {
 			name = "FRANCOIS_DUBOIS_MASACRE_eventPicture"
 			texturefile = "gfx/event_pictures/FRANCOIS_DUBOIS_MASACRE_eventPicture.dds"
 			allwaystransparent = yes
 		}
-		
+
 	}

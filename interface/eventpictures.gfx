@@ -1,0 +1,10 @@
+spriteTypes = {
+	
+	# Event stmu_europe.15
+		spriteType = {
+			name = "FRANCOIS_DUBOIS_MASACRE_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCOIS_DUBOIS_MASACRE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+	}

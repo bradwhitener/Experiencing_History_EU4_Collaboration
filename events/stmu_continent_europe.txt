@@ -1021,21 +1021,120 @@ country_event = {
 			continent = europe
 		}
 		NOT = {
-			has_country_flag = had_event_stmu_europe.5
+			has_country_flag = had_event_stmu_europe.7
 		}
 	}
 	mean_time_to_happen = {
 		days = 29
 	}
 	immediate = {
-		set_country_flag = had_event_stmu_europe.5
+		set_country_flag = had_event_stmu_europe.7
 	}
 	option = {
 		name = "stmu_europe.7.a"
 	}
 }
+#####################################################
+#													#
+#  stmu europe 10 | July 17,1453     			    #
+#													#
+# The Battle of Castillon Ends One Hundred Years of Conflict# 												#
+#  Template for simple date-triggered events		#
+#													#
+#####################################################
 
+country_event = {
+	id = stmu_europe.10
+	title = "stmu_europe.10.n"
+	desc = "stmu_europe.10.d"
+	picture = BATTLE_eventPicture
+	trigger = {
+		is_year = 1453
+		is_month = 6
+		NOT = { is_year = 1454 }
+		tag = FRA
+		NOT = {
+			has_country_flag = had_event_stmu_europe.10
+		}
+	}
+	mean_time_to_happen = {
+		days = 17
+	}
+	immediate = {
+		set_country_flag = had_event_stmu_europe.10
+	}
+	option = {
+		name = "stmu_europe.10.a"
+	}
+}
+#####################################################
+#													#
+#  stmu europe 11 | June 7, 1494    			    #
+#													#
+#  Treary of Tordesillas                            # 												#
+#  Template for simple date-triggered events		#
+#													#
+#####################################################
 
+country_event = {
+	id = stmu_europe.11
+	title = "stmu_europe.11.n"
+	desc = "stmu_europe.11.d"
+	picture = CONQUEST_eventPicture
+	trigger = {
+		is_year = 1494
+		is_month = 5
+		NOT = { is_year = 1495 }
+		tag = CAS
+		tag = POR
+		NOT = {
+			has_country_flag = had_event_stmu_europe.11
+		}
+	}
+	mean_time_to_happen = {
+		days = 7
+	}
+	immediate = {
+		set_country_flag = had_event_stmu_europe.11
+	}
+	option = {
+		name = "stmu_europe.11.a"
+	}
+}
+#####################################################
+#													#
+#  stmu europe 12 | May 29, 1453     			    #
+#													#
+#  1453 - The Fall of Constantinople                #
+#													#
+#  Template for simple date-triggered events		#
+#													#
+#####################################################
+
+country_event = {
+	id = stmu_europe.12
+	title = "stmu_europe.12.n"
+	desc = "stmu_europe.12.d"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	trigger = {
+		is_year = 1450
+		is_month = 3
+		NOT = { is_year = 1451 }
+		tag = FRA
+		NOT = {
+			has_country_flag = had_event_stmu_europe.12
+		}
+	}
+	mean_time_to_happen = {
+		days = 15
+	}
+	immediate = {
+		set_country_flag = had_event_stmu_europe.12
+	}
+	option = {
+		name = "stmu_europe.12.a"
+	}
+}
 
 
 
